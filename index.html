@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferencis Bs As</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- CABECERA -->
+    <header>
+        <!-- LOGO CODO A CODO -->
+        <a href="./index.html" class="contenedor-logo">
+            <img class="img-codoacodo" src="./img/codoacodo.png" alt="img codoacodo">Conf Bs As
+        </a>
+        <!-- MENU -->
+        <button class="boton-menu">
+            <i class="fi fi-br-menu-burger"></i>
+        </button>
+        
+        <nav>
+            <div class="menu">
+                <a class="hover-boton-menu" href="#conferencia">La conferencia</a>
+                <a class="hover-boton-menu" href="#oradores">Los oradores</a>
+                <a class="hover-boton-menu" href="#lugaryfecha">El lugar y la fecha</a>
+                <a class="hover-boton-menu" href="#conviertete">Conviertete en orador</a>
+                <a class="hover-boton-menu" id="hover-boton-comprartickets" href="./pages/comprar tickets/compratickets.html">Comprar tickets</a>
+            </div>
+        </nav>
+    </header>
+    <!-- IMAGEN PORTADA -->
+    <div id="conferencia" class="contenedor-img-principal">
+        <!-- <img src="./img/ba1.jpg" alt="img ba1"> -->
+        <div class="contenedor-img-principal-texto">
+            <h2 class="h2-confbsas">Conf Bs As</h2>
+            <p class="p-texto">Bs As llega por prmera vez a Argentina Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Van a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de priemr niel que tenemos para ti. Te esperamos!</p>
+            <a href="#conviertete"><button class="contenedor-img-principal-boton1">Quiero ser orador</button></a>
+            <a href="./pages/comprar tickets/compratickets.html"><button class="contenedor-img-principal-boton2">Comprar tickets</button></a>
+        </div> 
+    </div>       
+    <!-- CONTENEDOR ORADORES     -->
+    <div id="oradores" class="contenedor-oradores-titulo">CONOCE A LOS<h2>ORADORES</h2></div>
+    <div class="contenedor-cards">
+        <div class="card steve-jobs">
+            <div class="card-img">
+                <img src="./img/steve.jpg" alt="img Steve Jobs">
+            </div>
+            <div class="card-datos">
+                <span class="card-javascript">JavaScript</span>
+                <span class="card-react">React</span>
+                <h2 class="card-h2">Steve Jobs</h2>
+                <p class="card-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum adipisci tempora enim ab, eaque aliquam illum laudantium id maiores rem recusandae voluptatibus mollitia laborum beatae impedit pariatur vero autem quas?</p>
+            </div>
+        </div>
+        <div class="card bill-gates">
+            <div class="card-img">
+                <img src="./img/bill.jpg" alt="img Bill Gates">
+            </div>
+            <div class="card-datos">
+                <span class="card-javascript">JavaScript</span>
+                <span class="card-react">React</span>
+                <h2 class="card-h2">Bill Gates</h2>
+                <p class="card-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum adipisci tempora enim ab, eaque aliquam illum laudantium id maiores rem recusandae voluptatibus mollitia laborum beatae impedit pariatur vero autem quas?</p> 
+            </div>
+        </div>
+        <div class="card ada-lovelace">
+            <div class="card-img">
+                <img src="./img/ada.jpeg" alt="img Ada Lovelace">
+            </div>
+            <div class="card-datos">
+                <span class="card-negocios">Negocios</span>
+                <span class="card-startups">Startups</span>
+                <h2 class="card-h2">Ada Lovelace</h2>
+                <p class="card-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum adipisci tempora enim ab, eaque aliquam illum laudantium id maiores rem recusandae voluptatibus mollitia laborum beatae impedit pariatur vero autem quas?</p>
+            </div>
+        </div>
+    </div> 
+    
+    <!-- CONTENEDOR IMAGEN PLAYA -->
+    <div id="lugaryfecha" class="contenedor-playa">
+        <div class="contenedor-playa-img">
+            <img src="./img/honolulu.jpg" alt="">
+        </div>
+        <div class="contenedor-playa-texto">
+            <div class="contenedor-playa-texto-interno">
+                <h2>Bs As - Octubre</h2>
+                <p>Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al area urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolida que cubre toda la ciudad (aproximadamente 600km2 de superficie).</p>
+                <button class="contenedor-playa-boton">Conocé más</button>
+            </div>
+            
+        </div>
+    </div>
+     
+    <!-- INGRESAR DATOS -->
+
+<div id="conviertete" class="contenedor-formulario">
+    <div>CONVIERTETE EN UN <h2>ORADOR</h2></div>
+    <p>Anotate como orador para dar una charla ignite. Cuentanos de que quieras hablar!</p>
+    <div class="contenedor-formulario-datos">
+        <input class="contenedor-formulario-datos-nombre" type="text" name="nombre" placeholder="Nombre" required>
+        <input class="contenedor-formulario-datos-apellido" type="text" name="apellido" placeholder="Apellido" required id="">
+        <textarea class="contenedor-formulario-datos-texto" name="texto" placeholder="Sobre que quieres hablar?" id="" cols="30" rows="10"></textarea>
+        <p class="p-item">*Recuerda incluir un titulo para tu charla</p>
+        <button class="contenedor-formulario-datos-boton" >Enviar</button>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <a class="footer uno">Preguntas frecuentes</a>
+    <a class="footer dos">Contactanos</a>
+    <a class="footer tres">Prensa</a>
+    <a class="footer cuatro">Conferencias</a>
+    <a class="footer cinco">Terminos y condiciones</a>
+    <a class="footer seis">Privacidad</a>
+    <a class="footer siete">Estudiantes</a>
+</footer>
+
+</body>
+</html>

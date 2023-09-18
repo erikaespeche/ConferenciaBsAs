@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Tickets</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <!-- CABECERA -->
+    <header>
+        <!-- LOGO CODO A CODO -->
+        <a href="../../index.html" class="contenedor-logo">
+            <img class="img-codoacodo" src="../../img/codoacodo.png" alt="img codoacodo">Conf Bs As
+        </a>
+        <!-- MENU -->
+        <button class="boton-menu">
+            <i class="fi fi-br-menu-burger"></i>
+        </button>
+        
+        <nav>
+            <div class="menu">
+                <a class="hover-boton-menu" href="../../index.html">La conferencia</a>
+                <a class="hover-boton-menu" href="../../index.html">Los oradores</a>
+                <a class="hover-boton-menu" href="../../index.html">El lugar y la fecha</a>
+                <a class="hover-boton-menu" href="../../index.html">Conviertete en orador</a>
+                <a class="hover-boton-menu" id="hover-boton-comprartickets" href="./compratickets.html">Comprar tickets</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- DESCUENTO DE TICKETS -->
+    <main>
+        <div class="contenedor-padre-comprartickets">
+            <div class="contenedor-card-comprartickets">
+                <div class="card-1-comprartickets">
+                    <h2 class="estudiantes">Estudiantes</h2>
+                    <div class="parte-abajo">
+                        <p class="descuento">Tiene un descuento</p>
+                        <h2 class="porcentaje">80%</h2>
+                        <p class="presentar-documentacion">*Presentar documentacion</p>
+                    </div>
+                </div>
+                <div class="card-2-comprartickets">
+                    <h2 class="trainee">Trainee</h2>
+                    <div class="parte-abajo">
+                        <p class="descuento">Tiene un descuento</p>
+                        <h2 class="porcentaje">50%</h2>
+                        <p class="presentar-documentacion">*Presentar documentacion</p>
+                    </div>
+                </div>
+                <div class="card-3-comprartickets">
+                    <h2 class="junior">Junior</h2>
+                    <div class="parte-abajo">
+                        <p class="descuento">Tiene un descuento</p>
+                        <h2 class="porcentaje">15%</h2>
+                        <p class="presentar-documentacion">*Presentar documentacion</p>
+                    </div>
+                </div>
+        </div>
+
+        <!-- COMPLETAR FORMULARIO -->
+
+        <h3 class="titulo-venta">VENTA</h3>
+        <h1 class="titulo-valor">VALOR DE  TICKET $200</h1>
+        <form action="">
+            <div class="div-1">
+                <input class="div-1-nombre" type="text" name="nombre" id="" placeholder="Nombre" required>
+                <input class="div-1-apellido"  type="text" name="apellido" placeholder="Apellido" id="" required>
+            </div>
+            <div class="div-2">
+                <input class="div-2-email" type="email" name="email" id="" placeholder="Email" required>
+            </div>
+            <div class="div-3">
+                <div class="div-3-cantidad">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="text" name="cantidad" id="cantidad" placeholder="Cantidad" required>
+                </div>
+                <div class="div-3-categoria">
+                    <label for="categoria">Categoria</label>
+                    <select name="categoria" id="categoria" required>
+                        <option value="0">--Seleccione--</option>
+                        <option value="1">Sin Categoria</option>
+                        <option value="2">Estudiante</option>
+                        <option value="3">Trainee</option>
+                        <option value="4">Junior</option>
+                    </select>
+                </div>       
+            </div>
+            <div class="div-4">
+                <p class="div-4-total">Total a pagar: $</p>
+                    
+            </div>
+            <div class="div-5">
+                    <input class="div-5-boton-borrar" type="reset" value="Borrar">
+                    <input class="div-5-boton-resumen" type="button" value="Resumen">
+            </div>
+                
+            
+            
+        </form>
+    </main>
+
+
+
+
+
+      <!-- FOOTER -->
+    <footer>
+        <a class="footer uno">Preguntas frecuentes</a>
+        <a class="footer dos">Contactanos</a>
+        <a class="footer tres">Prensa</a>
+        <a class="footer cuatro">Conferencias</a>
+        <a class="footer cinco">Terminos y condiciones</a>
+        <a class="footer seis">Privacidad</a>
+        <a class="footer siete">Estudiantes</a>
+    </footer>
+</body>
+</html>
