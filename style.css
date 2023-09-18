@@ -319,13 +319,17 @@ a:hover .contenedor-img-principal-boton1:hover{
 
 .contenedor-playa-texto{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     overflow: hidden;
     background-color: #2c2b2b;
-    & div{
-        margin: 0px 10px 0px 10px;
-        color: #fff;
+    padding: 10px 27px 0px 20px;
+    color: #fff;
         & h2{
-            margin: 10px 0px 10px 0px;
+          text-align: justify;
+          display: flex;
+          flex-wrap: wrap;  
         }
         & p{
             margin: 0 0 15px 0;
@@ -503,10 +507,13 @@ footer{
 
 /* ---------------------------------------PAGINA COMPRAR TICKET ----------------------------------------*/
 
+
+
+
 /* TARJETAS DESCUENTOS */
 .contenedor-padre-comprartickets{
     width: 100vw;
-    margin: 25px 10px 10px 10px
+    margin: 25px 0px 25px 0px;
 }
 
 
@@ -747,6 +754,35 @@ select{
 
 
 /* ---------------------------------------------RESPONSIVE---------------------------------------------------------------- */
+@media(min-width: 0) and (max-width: 320px){
+    .contenedor-playa-texto{
+        & p{
+            padding: 0px 166px 15px 0;
+            font-size: 0.9rem;
+            text-align: justify;
+        }
+    }  
+}
+
+@media(min-width: 321px) and (max-width: 375px){
+    .contenedor-playa-texto{
+        & p{
+            padding: 0px 110px 15px 0;
+            font-size: 0.9rem;
+            text-align: justify;
+        }
+    }  
+}
+
+@media(min-width:376px) and (max-width: 425px){
+    .contenedor-playa-texto{
+        & p{
+            padding: 0px 70px 15px 0;
+            font-size: 0.9rem;
+            text-align: justify;
+        }
+    }
+}
 
 @media(min-width: 0) and (max-width: 900px){
     header{
