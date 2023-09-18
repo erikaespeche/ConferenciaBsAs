@@ -754,7 +754,7 @@ select{
 
 
 /* ---------------------------------------------RESPONSIVE---------------------------------------------------------------- */
-@media(min-width: 0) and (max-width: 320px){
+@media(min-width: 0) and (max-width: 350px){
     .contenedor-playa-texto{
         & p{
             padding: 0px 166px 15px 0;
@@ -764,7 +764,7 @@ select{
     }  
 }
 
-@media(min-width: 321px) and (max-width: 375px){
+@media(min-width: 351px) and (max-width: 375px){
     .contenedor-playa-texto{
         & p{
             padding: 0px 110px 15px 0;
@@ -774,10 +774,30 @@ select{
     }  
 }
 
-@media(min-width:376px) and (max-width: 425px){
+@media(min-width:376px) and (max-width: 400px){
     .contenedor-playa-texto{
         & p{
-            padding: 0px 70px 15px 0;
+            padding: 0px 100px 15px 0;
+            font-size: 0.9rem;
+            text-align: justify;
+        }
+    }
+}
+
+@media(min-width:401px) and (max-width: 425px){
+    .contenedor-playa-texto{
+        & p{
+            padding: 0px 77px 15px 0;
+            font-size: 0.9rem;
+            text-align: justify;
+        }
+    }
+}
+
+@media(min-width:426px) and (max-width: 475px){
+    .contenedor-playa-texto{
+        & p{
+            padding: 0px 50px 15px 0;
             font-size: 0.9rem;
             text-align: justify;
         }
