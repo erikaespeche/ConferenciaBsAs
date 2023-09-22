@@ -351,8 +351,8 @@ a:hover .contenedor-img-principal-boton1:hover{
             cursor: pointer;
             padding: 10px 0;
         } 
-    }
 }
+
 
 .contenedor-playa-boton:active{
     transform: scale(0.9, 0.9);
