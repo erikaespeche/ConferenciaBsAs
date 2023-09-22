@@ -6,30 +6,34 @@
     <title>Comprar Tickets</title>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
 </head>
 <body class="body-comprartickets">
     <!-- CABECERA -->
     <header>
-        <!-- LOGO CODO A CODO -->
-        <a href="../../index.html" class="contenedor-logo">
-            <img class="img-codoacodo" src="../../img/codoacodo.png" alt="img codoacodo">Conf Bs As
-        </a>
-        <!-- MENU -->
-        <button class="boton-menu">
-            <i class="fi fi-br-menu-burger"></i>
-        </button>
-        
-        <nav>
-            <div class="menu">
-                <a class="hover-boton-menu" href="../../index.html">La conferencia</a>
-                <a class="hover-boton-menu" href="../../index.html">Los oradores</a>
-                <a class="hover-boton-menu" href="../../index.html">El lugar y la fecha</a>
-                <a class="hover-boton-menu" href="../../index.html">Conviertete en orador</a>
-                <a class="hover-boton-menu" id="hover-boton-comprartickets" href="./compratickets.html">Comprar tickets</a>
+        <nav class="navbar navbar-expand-lg  bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white"  href="../../index.html">
+                <img src="../../img/codoacodo.png" alt="Logo" width="100" class="d-inline-block align-text-center">
+                Conf Bs As
+              </a>
+              <button id="boton-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span  class="fi fi-br-menu-burger"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="menu-botones navbar-nav">
+                  <a class="hover-botones-menu nav-link text-white active " aria-current="page" href="#conferencia">La Conferencia</a>
+                  <a class="hover-botones-menu nav-link text-white" href="../../index.html">Los oradores</a>
+                  <a class="hover-botones-menu nav-link text-white" href="../../index.html">El lugar y la fecha</a>
+                  <a class="hover-botones-menu nav-link text-white" href="../../index.html">Conviertete en orador</a>
+                  <a id="hover-botones-comprartickets" class="nav-link text-white" href="./compratickets.html">Comprar tickets</a>
+                </div>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
+
 
     <!-- DESCUENTO DE TICKETS -->
     <main>
@@ -117,5 +121,8 @@
         <a class="footer seis">Privacidad</a>
         <a class="footer siete">Estudiantes</a>
     </footer>
+
+
+    <script src="../../js/bootstrap.min.js"></script>
 </body>
 </html>

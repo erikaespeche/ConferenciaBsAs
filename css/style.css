@@ -25,7 +25,7 @@ header{
     background-color: #333a40;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgba(255,255,255,.55);
-    display: grid;
+    
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "a b"
         "c c";
@@ -38,18 +38,21 @@ header{
 }
 
 
-.boton-menu{
-    width: min-content;
-    background-color: transparent;
-    border: 0.5px solid #fff;
-    border-radius: 5px;
-    display: none;
-    padding: 5px;
-   
-
+#boton-menu{
+    border: 0.5px solid #ffffff70;
+    margin: 0 10px 0 0;
 }
 
-i{
+.fi-br-menu-burger{
+    color: #ffffff9a;
+    font-size: 2rem;
+}
+
+.menu-botones{
+    margin: 0 10px 0 0;
+}
+/* 
+span{
     font-size: 30px;
     display: grid;
     grid-area: b;
@@ -90,7 +93,7 @@ nav{
     font-weight: 700;
     column-gap: 1.3em;
     justify-content: flex-end;
-}
+} 
 
 a{
     text-decoration: none;
@@ -100,23 +103,23 @@ a{
     font-size: 0.9rem;
     width: max-content;
     cursor: pointer;
-    font-weight: normal;
+    font-weight: normal;  
+}
+*/
+
+.hover-botones-menu:hover{
+    color: #7c7d80 !important;
     
 }
 
-.hover-boton-menu:hover{
-    transform: scale(1.1, 1.1);
-    
-}
-
-#hover-boton-comprartickets:hover{
-    color: #198754;
+#hover-botones-comprartickets:hover{
+    color: #198754 !important;
 }
 
 
 /* IMAGEN PORTADA */
 .contenedor-img-principal{
-    background-image: url(./img/ba1.jpg);
+    background-image: url(../img/ba1.jpg);
     width: 100%;
     height: 500px;
     background-size: cover;
@@ -224,14 +227,16 @@ a:hover .contenedor-img-principal-boton1:hover{
 .card{
     width: 80%;
     border: 1px solid #d9d3d3;
-    border-radius: 4px;
+    border-radius: 4px 4px 0 0;
     .card-img{
         width: 100%;
         overflow: hidden;
+        border-radius: 4px 4px 0 0;
         & img{
           width: 100%;
           height: 100%;
           object-fit: cover; 
+          border-radius: 4px 4px 0 0;
         }
     }
     .card-datos{
@@ -803,6 +808,16 @@ select{
         }
     }
 }
+
+@media(min-width:476px){
+    .contenedor-playa-texto{
+        & p{
+            text-align: justify;
+        }
+    }
+}
+
+
 
 @media(min-width: 0) and (max-width: 900px){
     header{

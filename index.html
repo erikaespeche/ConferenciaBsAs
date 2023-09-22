@@ -5,17 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conferencis Bs As</title>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- CABECERA -->
     <header>
-        <!-- LOGO CODO A CODO -->
+        <nav class="navbar navbar-expand-lg  bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white"  href="#">
+                <img src="./img/codoacodo.png" alt="Logo" width="100" class="d-inline-block align-text-center">
+                Conf Bs As
+              </a>
+              <button id="boton-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span  class="fi fi-br-menu-burger"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="menu-botones navbar-nav">
+                  <a class="hover-botones-menu nav-link text-white active " aria-current="page" href="#conferencia">La Conferencia</a>
+                  <a class="hover-botones-menu nav-link text-white" href="#oradores">Los oradores</a>
+                  <a class="hover-botones-menu nav-link text-white" href="#lugaryfecha">El lugar y la fecha</a>
+                  <a class="hover-botones-menu nav-link text-white" href="#conviertete">Conviertete en orador</a>
+                  <a id="hover-botones-comprartickets" class="nav-link text-white" href="./pages/comprar tickets/compratickets.html">Comprar tickets</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+    <!-- <header>
+         LOGO CODO A CODO 
         <a href="./index.html" class="contenedor-logo">
             <img class="img-codoacodo" src="./img/codoacodo.png" alt="img codoacodo">Conf Bs As
         </a>
-        <!-- MENU -->
+         MENU 
         <button class="boton-menu">
             <i class="fi fi-br-menu-burger"></i>
         </button>
@@ -29,7 +54,9 @@
                 <a class="hover-boton-menu" id="hover-boton-comprartickets" href="./pages/comprar tickets/compratickets.html">Comprar tickets</a>
             </div>
         </nav>
-    </header>
+    </header> -->
+
+
     <!-- IMAGEN PORTADA -->
     <div id="conferencia" class="contenedor-img-principal">
         <!-- <img src="./img/ba1.jpg" alt="img ba1"> -->
@@ -118,5 +145,8 @@
     <a class="footer siete">Estudiantes</a>
 </footer>
 
+
+
+<script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
