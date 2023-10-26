@@ -473,6 +473,11 @@ a:hover .contenedor-img-principal-boton1:hover{
     }
 }
 
+#botonBorrar{
+    background-color: #d10202a8;
+    border: 1px solid transparent;
+}
+
 textarea[placeholder]{
     padding: 10px 0 0 5px;
     font-size: 16px;
