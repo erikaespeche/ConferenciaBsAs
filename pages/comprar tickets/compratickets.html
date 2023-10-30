@@ -71,22 +71,22 @@
 
         <h3 class="titulo-venta">VENTA</h3>
         <h1 class="titulo-valor">VALOR DE  TICKET $200</h1>
-        <form id="formulario" action="">
+        <form id="formulario" action=""  autocomplete="on">
             <div class="div-1">
-                <input id="nombre" class="div-1-nombre" type="text" name="nombre" placeholder="Nombre" required>
+                <input id="nombre" class="div-1-nombre" type="text" name="nombre" placeholder="Nombre"  required> 
                 <input id="apellido" class="div-1-apellido"  type="text" name="apellido" placeholder="Apellido" required>
             </div>
             <div class="div-2">
-                <input id="mail" class="div-2-email" type="email" name="email" placeholder="nombre@ejemplo.com" required>
+                <input id="mail" class="div-2-email" type="email" name="mail" placeholder="nombre@ejemplo.com" required>
             </div>
             <div class="div-3">
                 <div class="div-3-cantidad">
                     <label for="cantidad">Cantidad</label>
-                    <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad" required>
+                    <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad" min="1" max="1000" required>
                 </div>
                 <div class="div-3-categoria">
                     <label for="categoria">Categoria</label>
-                    <select name="categoria" id="categoria" required>
+                    <select id="categoria" name="categoria"  required>
                         <option value="">--Seleccione--</option> 
                         <option value="1">Sin Categoria</option>
                         <option value="2">Estudiante</option>
@@ -100,9 +100,14 @@
                     
             </div>
             <div class="div-5">
-                    <input id="botonBorrar" class="div-5-boton-borrar" type="reset" value="Borrar">
-                    <input id="botonResumen" class="div-5-boton-resumen" type="submit" value="Resumen">
+                    <button id="botonBorrar" class="div-5-boton-borrar" type="reset">Cancelar</button>
+                    <button id="botonTotal" class="div-5-boton-total" type="button" name="BotonTotal">Total</button>
+                    <button id="botonResumen" class="div-5-boton-resumen" type="submit">Resumen</button>
             </div>
+            <!-- <div id="ticketImprimir" onclick='window.open("width=500, height=700", "target=_blank")' >
+
+            </div> -->
+
                 
             
             

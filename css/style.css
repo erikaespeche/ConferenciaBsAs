@@ -473,10 +473,6 @@ a:hover .contenedor-img-principal-boton1:hover{
     }
 }
 
-#botonBorrar{
-    background-color: #d10202a8;
-    border: 1px solid transparent;
-}
 
 textarea[placeholder]{
     padding: 10px 0 0 5px;
@@ -769,15 +765,27 @@ form{
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    .div-5-boton-borrar, .div-5-boton-resumen{
-        background-color: #96c93e;
-        width: 24%;
+    .div-5-boton-borrar, .div-5-boton-resumen, .div-5-boton-total{
+        background-color: #039f13;
+        width: 16%;
         padding: 10px 0 10px 0;
         border-radius: 0.25rem;
-        border: 1px solid #96c93e;
+        border: 1px solid #039f13;
         font-size: 20px;
         color: #fff;
     }
+}
+
+#botonBorrar{
+    color: #d10202;
+    border: 1px solid #d10202;
+    background-color: #fff;
+}
+
+#botonTotal{
+    color: #039f1e;
+    border: 1px solid #039f1e;
+    background-color: #fff;
 }
 
 input[placeholder]{
@@ -794,6 +802,28 @@ select{
     border: 1px solid #ced4da;
     font-size: 16px;
 }
+
+/* VALIDACION FORMULARIO TICKET  */
+
+/* CAMPOS NO VALIDOS  */
+.error-input{
+    box-shadow: 0 0 5px 1px  #ff0000db;
+    
+}
+/* #nombre:invalid, #apellido:invalid, #mail:invalid, #cantidad:invalid, #categoria:invalid{
+    box-shadow: 0 0 5px 1px  #ff000075;
+} */
+
+/* #nombre:focus:invalid, #apellido:focus:invalid, #mail:focus:invalid, #cantidad:focus:invalid, #categoria:focus:invalid{
+    box-shadow: none;
+    outline: none;
+    
+} */
+
+
+
+
+
 
 
 
@@ -905,7 +935,7 @@ select{
     .div-5{
         flex-direction: column;
         align-items: center;
-        .div-5-boton-borrar, .div-5-boton-resumen{
+        .div-5-boton-borrar, .div-5-boton-total ,.div-5-boton-resumen{
             width: 60%;
         }
     }
