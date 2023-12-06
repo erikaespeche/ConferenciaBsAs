@@ -88,10 +88,10 @@
                     <label for="categoria">Categoria</label>
                     <select id="categoria" name="categoria"  required>
                         <option value="">--Seleccione--</option> 
-                        <option value="1">Sin Categoria</option>
-                        <option value="2">Estudiante</option>
-                        <option value="3">Trainee</option>
-                        <option value="4">Junior</option>
+                        <option value="Sin Categoria">Sin Categoria</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Trainee">Trainee</option>
+                        <option value="Junior">Junior</option>
                     </select>
                 </div>       
             </div>
@@ -106,13 +106,46 @@
             </div>
             <!-- <div id="ticketImprimir" onclick='window.open("width=500, height=700", "target=_blank")' >
 
-            </div> -->
-
-                
-            
-            
+            </div> -->  
         </form>
     </main>
+
+
+
+    <!--VENTANA EMERGENTE CONFIRMAR COMPRA DE TICKETS-->
+
+<!-- Ventana emergente -->
+<div class="modal" id="resumenModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Encabezado de la ventana emergente -->
+        <div class="modal-header">
+          <h5 class="modal-title">Resumen de pedido</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <!-- Contenido de la ventana emergente -->
+        <div class="modal-body" id="resumenPedido">
+          <!-- Aquí se van a mostrar los datos ingresados -->
+        </div>
+  
+        <!-- Pie de la ventana emergente -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" id="confirmarPedido">Confirmar pedido</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
 
 
 
