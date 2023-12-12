@@ -825,9 +825,12 @@ select{
 
 /* IMPRIMIR TICKET */
 
-/* #body-imprimirTicket{
+#body-imprimirTicket{
+    display: flex;
     align-content: center;
     justify-content: center;
+    height: 100vh;
+    align-items: center;
 }
 
 #div-tildeverde{
@@ -838,7 +841,7 @@ select{
 }
 
 #tildeverde{
-    width: 26%;
+    width: 20%;
     height: 90%;
 }
 
@@ -852,6 +855,7 @@ select{
 
 #texto-ticket{
     font-family: monospace;
+    line-height: 20px;
 }
 
 #div-botonimprimir{
@@ -861,15 +865,14 @@ select{
 }
 
 #boton-imprimirTicket{
-    margin-top: 1rem;
+    margin: 1rem;
 }
 
 #boton-imprimirTicket>a{
     font-family: monospace;
     text-decoration: none;
     color: #fff;
-} */
-
+}
 
 
 

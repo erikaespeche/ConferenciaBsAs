@@ -1,6 +1,9 @@
+# ProyectoIntegradorJavaFinal
+GRUPO 3
+
 # ConferenciaBsAs
 
-### Esta pagina la realice utilizando HTML, CSS y Bootstrap
+### Esta pagina la realizamos utilizando HTML, CSS, Bootstrap, Javascript y JAVA para la Base de DATOS
 
 [Link de la pagina](https://erikaespeche.github.io/ConferenciaBsAs/)
 
